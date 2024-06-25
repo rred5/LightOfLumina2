@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a704772e6cfe9b749af8d5180319a49a, type: 3}
-  m_Name: Taro Tile
+  m_Name: TestTile
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 21300000, guid: 00c2b53fa91fe144dad151b8ec6dfdb9, type: 3}
   m_DefaultGameObject: {fileID: 0}
