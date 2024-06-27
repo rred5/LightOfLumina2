@@ -16,6 +16,7 @@ public class InputManager : MonoBehaviour
     private bool interactPressed = false;
     private bool submitPressed = false;
     public bool pausePressed = false;
+    public bool bPressed = false;
 
     private static InputManager instance;
 
@@ -50,6 +51,27 @@ public class InputManager : MonoBehaviour
         }
         */
         
+    }
+
+    public void BPressed(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            bPressed = true;
+        }
+        /*
+        if (context.performed)
+        {
+            pausePressed = true;
+        }
+
+        
+        else if (context.canceled)
+        {
+            pausePressed = false;
+        }
+        */
+
     }
 
     public void MovePressed(InputAction.CallbackContext context)
@@ -138,9 +160,22 @@ public class InputManager : MonoBehaviour
         
     }
 
+    public bool GetBPressed() {
+        bool result = bPressed;
+        //bPressed = false;
+        return result;
+
+            }
+
     public void SetPausePressed(bool pauseCheck) {
         pausePressed = pauseCheck;
     }
+
+    public void SetBPressed(bool BCheck)
+    {
+       bPressed = BCheck;
+    }
+
 
     public void RegisterSubmitPressed() 
     {

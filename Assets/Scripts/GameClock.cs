@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class GameClock : MonoBehaviour
 {
-    public Text clockText; // Reference to the UI Text component to display the time
+    public TextMeshProUGUI clockText; // Reference to the UI Text component to display the time
     private float elapsedTime = 0f; // Variable to store the elapsed time
 
     void Update()

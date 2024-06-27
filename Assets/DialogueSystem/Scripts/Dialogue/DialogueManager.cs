@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayNameText;
     [SerializeField] private Animator portraitAnimator;
+   // [SerializeField] GameObject businessManagerHead;
+   // public BusinessManager businessManager;
     private Animator layoutAnimator;
 
     [Header("Choices UI")]
@@ -63,6 +65,8 @@ public class DialogueManager : MonoBehaviour
 
         audioSource = this.gameObject.AddComponent<AudioSource>();
         currentAudioInfo = defaultAudioInfo;
+
+        //businessManager = businessManagerHead.GetComponent<BusinessManager>();
     }
 
     public static DialogueManager GetInstance() 
