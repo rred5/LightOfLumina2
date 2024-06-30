@@ -18,8 +18,19 @@ INCLUDE globals.ink
 -You will need to hire workers, rent out a property, and acquire some equipment.
 - Here’s some money to help you get started, free of interest.
 ~ businessFunction("FBLAmoney")
+
+#speaker:System #portrait:system_default #layout:right #audio:beep_3
+- Pressing “B” will allow you to access the user interface. 
+- It is composed of three parts, which you can switch between by pressing the buttons on the right hand side.
+- The first page will show you everything related to your finances and lets you easily monitor your business. 
+- The second page lets you adjust components of your product manufacturing.
+- Finally, the third tab lets you monitor everything related to your customers.
+
+
 #speaker:Elian #portrait:elian_neutral #layout:left #audio:animal_crossing_mid
 - Thanks guys! I'll head down to the worker's union South East of here.
+
+
 
 
 -> END

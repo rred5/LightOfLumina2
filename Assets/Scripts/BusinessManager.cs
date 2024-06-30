@@ -97,6 +97,10 @@ public class BusinessManager : MonoBehaviour
         }
     }
 
+
+    public void setInterest(float inputInterest) {
+        interestRate = inputInterest;
+    }
     void Update()
     {
         if (businessStart)
@@ -111,6 +115,9 @@ public class BusinessManager : MonoBehaviour
         }
     }
 
+    public void toggleBusinessStart(bool input) {
+        businessStart = input;
+    }
     public void setBusiness(bool checkBusiness)
     {
         businessStart = checkBusiness;
@@ -214,12 +221,18 @@ public class BusinessManager : MonoBehaviour
         loanAmount += amount;
     }
 
-    public void PayOffLoan(float amount)
+    public void PayOffLoan()
     {
-        if (GameManager.Instance.playerMoney >= amount)
+        float amount = GameManager.Instance.playerMoney;
+        if (debt >= amount)
         {
             GameManager.Instance.AdjustMoney(-amount);
             debt -= amount;
+
+        }
+
+        else {
+            GameManager.Instance.AdjustMoney(-debt);
             if (debt < 0) debt = 0;
         }
     }

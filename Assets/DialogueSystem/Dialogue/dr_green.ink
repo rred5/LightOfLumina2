@@ -5,6 +5,9 @@ INCLUDE globals.ink
 
 
 
+
+
+
 Hello there! #speaker:Dr. Green #portrait:dr_green_neutral #layout:left #audio:animal_crossing_mid
 -> main
 
